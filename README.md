@@ -7,7 +7,7 @@ Student Number:
 Fork this repository and use it a starter project for your assignment
 
 # Description of the assignment
-
+ This is a Sci-Fi Cockpit User Interface
 # Instructions
 
 # How it works
