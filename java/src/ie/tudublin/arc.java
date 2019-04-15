@@ -34,5 +34,14 @@ public class ARC extends PApplet {
    this.strokeIntensity = 3;
   }
 }
+
+public void render(){
+    strokeWeight(strokeIntensity);
+    arc(0, 0, (radius * 2) , (radius * 2), s , t, OPEN);
+  }
+  
+public void mouseClicked(){
+    click = true;
+  }
   
  
