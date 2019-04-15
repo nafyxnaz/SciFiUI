@@ -1,6 +1,8 @@
+package ie.tudublin;
+
 import processing.core.PApplet;
 
-public class ARC extends PApplet {
+public class ARC  {
   
   public void settings (){
   float x;
@@ -43,5 +45,23 @@ public void render(){
 public void mouseClicked(){
     click = true;
   }
+
+ //Makes the arc increase in size when hovered over
+  public void hover(){
+    if ( mouseX >= (width / 2 - radius) && mouseX <= (width /2 + radius) && mouseY >= height / 2 -  radius && mouseY <= height / 2 + radius && radius < rMax){
+       radius++; 
+       if(strokeIntensity < 7){
+         strokeIntensity++;
+         }
+    }
+    else if (  radius > rMin) {
+       radius--; 
+       if( strokeIntensity > 3){
+         strokeIntensity--;
+       }
+        
+      } 
+    }
+}
   
  
