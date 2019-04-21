@@ -1,4 +1,4 @@
-public class RadarDot {
+public class DotRadar {
 
   float dx;
   float dy;
@@ -18,7 +18,7 @@ public class RadarDot {
   };
   
   
-  public void moveDot(){
+  public void moveRadar(){
     if ( dx < (width / 2 - radius) ){
       ex = random((width /2 + radius) , width);
       strokeWeight(10);
