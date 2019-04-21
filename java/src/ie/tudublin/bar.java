@@ -6,21 +6,23 @@ import processing.core.PApplet;
 public class bar  {
   
   public void settings (){
-    float x;        
-    float y;
-    float barW;
-    float barH;
-    float random;
-    float time;
-    float bMax;
-    float bMin;
+      
+ float x;        
+ float y;
+ float barW;
+ float barH;
+ float random;
+ float time;
+ float bMax;
+ float bMin;
  
+   private int change = 0;
  
- int change = 0;
   }
   
-  public bar(float x , float y , float barW , float barH){
+  public bar (float x , float y , float barW , float barH) {
     
+   
     this.x = x;
     this.y = y;
     this.barW = barW;
@@ -31,4 +33,18 @@ public class bar  {
     this.change = 1;
   }
   
+  
+   public void render() { 
+    rect(x , y , barW  ,barH);
+      barH += change;
+  }
+  
+  
+  
+  public void update(){
+    if(barH > bMin || barH < bMax )
+    {
+      change*=-1;
+    }
+  }
 }
