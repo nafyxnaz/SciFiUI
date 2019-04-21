@@ -7,7 +7,7 @@ public class starMap{
  int i;
  int j;
  
- public starMap(float x, float y){
+     public starMap (float x, float y){
   this.x = x;
   this.y = y;
   this.interval = width / 32;
