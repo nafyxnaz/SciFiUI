@@ -43,6 +43,11 @@ public class Radar
     public void update()
     {
         theta += PApplet.TWO_PI * timeDelta * frequency;
+        
+        if(theta >= PApplet.TWO_PI)
+        {
+            theta = 0;
+        }
     }
 
     /**
