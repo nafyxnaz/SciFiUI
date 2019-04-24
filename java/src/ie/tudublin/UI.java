@@ -1,12 +1,13 @@
 package ie.tudublin;
-
+import java.util.ArrayList;
 import processing.core.PApplet;
 
 public class UI extends PApplet
 {
     Button b;
     MovingCircle mc;
-
+    Radar radar;
+    
     boolean[] keys = new boolean[1024];
 
     public void keyPressed()
@@ -21,7 +22,7 @@ public class UI extends PApplet
 
     public boolean checkKey(int c)
     {
-        return keys[c] || keys [Character.toUpperCase(c)];
+        return keys[c] || keys[Character.toUpperCase(c)];
     }
     
 
